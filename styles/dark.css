@@ -10,3 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+.header {
+  background-image: url(../images/cover-image-dark.png);
+  display: grid;
+}
+
+
+
