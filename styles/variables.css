@@ -3,9 +3,35 @@
   и их переопределение под различные устройства
 */
 
+:root {
+  --main-color: #ff0070;
+}
 
 :root {
-  --pink: #ff0070;
-  --purple: #db00ff;
-  --black: #000028;
+  --title-color: #DB00FF;
+}
+
+:root {
+  --background-color: #000028;
+}
+
+:root {
+  --text-color: #F1B2CE;
+}
+
+
+:root {
+  --main-color-ligt: #FF8DCB;
+}
+
+:root {
+  --title-color-light: #ffc2e6;
+}
+
+:root {
+  --background-color-light: #FFF1F7;
+}
+
+:root {
+  --text-color-light: #353430;
 }

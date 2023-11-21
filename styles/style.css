@@ -18,7 +18,6 @@ button {
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  padding: 0 20px;
   font-family: "IBM Plex Mono",sans-serif;
 }
 
@@ -30,26 +29,28 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+  padding-inline-end: 20px;
 }
 
-.header__theme-menu {
-  padding-block-start: 20px;
+.header__theme {
+  display: grid;
+  grid-template: 100% / 2fr 1fr;
+  padding-block: 20px;
+  margin-inline-start: 20px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: center;
+  justify-content: end;
   gap: 10px;
+  margin-inline-end: 50px;
 }
 
 .header__theme-menu-item {
   padding: 0 13px;
   padding-block-end: 2px;
-  gap: 23px;
-  outline: 1px solid var(--pink);
-  outline-offset: 0;
 }
 
 .header__theme-menu-button {
@@ -66,44 +67,56 @@ button {
   pointer-events: none;
 }
 
-.header__decorative-text {
+.decor {
   display: flex;
-  justify-content: end;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
+
+.header__decor-text {
+  display: flex;
+  width: 33px;
+  height: 26px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 138.889%;
-  margin-block-start: -24px;
-  margin-inline: -2px 4px;
 }
 
-.header__decorative-text::after {
-  content: '';
+.header__theme-menu-coner {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 25px;
-  width: 25px;
-  border-block-start: 1px solid var(--pink);
-  border-inline-end: 1px solid var(--pink);
-  margin-inline-start: 3px;
+  height: 25px;
 }
 
 .header__title {
   display: flex;
   align-items: center;
-
 }
 
 .header__title-text {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
-  margin-inline-start: -20px;
+  margin-inline-start: 0;
 }
 
 .header__text {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: space-between;
   padding-block-start: 50px;
+  padding-block-end: 20px;
+}
+
+.header__text-corner {
+  align-self: flex-end;
+  width: 25px;
+  height: 25px;
+  border-block-end: 1px solid var(--pink);
+  border-inline-start: 1px solid var(--pink);
 }
 
 .header__text-paragraph {
@@ -115,14 +128,8 @@ button {
   height: 71px;
 }
 
-.header__text::before {
-  content: '';
-  width: 25px;
-  height: 25px;
-  border-block-end: 1px solid var(--pink);
-  border-inline-start: 1px solid var(--pink);
-  margin-right: 470px;
-  margin-top: 160px;
+.main {
+  padding-inline: 20px;
 }
 
 .main__text-content {
@@ -180,7 +187,8 @@ button {
 }
 
 .main__image-content {
-  margin-block: 60px;
+  margin-block-start: 60px;
+  margin-block-end: 50px;
 }
 
 .main__image-content > h2:nth-child(1) {
@@ -194,28 +202,8 @@ button {
   gap: 20px;
 }
 
-.images > div:nth-child(1) {
-  height: 260px;
-}
-
-.images > div:nth-child(2) {
-  height:  595px;
-}
-
-.images > div:nth-child(3) {
-  height: 770px;
-}
-
-.images > div:nth-child(4) {
-  height: 315px;
-}
-
-.images > div:nth-child(5) {
-  height: 435px;
-}
-
 .image {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-position: center;
   object-fit: cover;
