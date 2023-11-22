@@ -9,6 +9,17 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --text-background-color: #ff0070;
+  --title-color: #DB00FF;
+  --background-color: #000028;
+  --text-color: #F1B2CE;
+  --section-title-color: #ff0070;
+  --header-text-color: #000028;
+  --shadow-color: #ff0070;
+  --card-title-color: #000028;
+  --header-decor-color: #ff0070;
+  --botton-and-coner-color: #ff0070;
+  --backgroud-img: url(../images/cover-image-dark.png);
 }
 
 .page {
@@ -16,32 +27,32 @@
 }
 
 .header {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--backgroud-img);
   background-position: center;
   background-size: cover;
 }
 
 .header__theme-menu-button {
-  color: var(--main-color);
+  color: var(--botton-and-coner-color);
 }
 
 .header__decor-text {
-  color: var(--main-color);
+  color: var(--header-decor-color);
 }
 
 .header__title-text {
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--main-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header__text-corner {
-  border-inline-start: 1px solid var(--main-color);
-  border-block-end: 1px solid var(--main-color);
+  border-inline-start: 1px solid var(--botton-and-coner-color);
+  border-block-end: 1px solid var(--botton-and-coner-color);
 }
 
 .header__theme-menu-coner {
-  border-block-start: 1px solid var(--main-color);
-  border-inline-end: 1px solid var(--main-color);
+  border-block-start: 1px solid var(--botton-and-coner-color);
+  border-inline-end: 1px solid var(--botton-and-coner-color);
 }
 
 .header__theme-menu-coner::before {
@@ -49,23 +60,23 @@
   content: '';
   width: 9px;
   height: 9px;
-  background-color: var(--main-color);
-  box-shadow: 0 0 5px 3px var(--main-color);
+  background-color: var(--header-decor-color);
+  box-shadow: 0 0 5px 3px var(--header-decor-color);
   border-radius: 50%;
 }
 
 .header__text-paragraph {
-  color: var(--background-color);
-  background-color: var(--main-color);
+  color: var(--header-text-color);
+  background-color: var(--text-background-color);
 }
 
 .main__titles {
-  color: var(--main-color);
+  color: var(--section-title-color);
 }
 
 .title-decor {
-  background-color: var(--main-color);
-  color: var(--background-color);
+  background-color: var(--text-background-color);
+  color: var(--card-title-color);
 }
 
 .card__text {
@@ -75,10 +86,10 @@
 .card__text-link {
   text-decoration: none;
   color: var(--text-color);
-  text-shadow: 2px 2px 0 var(--main-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 .footer__title {
   color: var(--title-color);
-  text-shadow: 2px 2px 0 var(--main-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }

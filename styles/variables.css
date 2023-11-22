@@ -4,7 +4,7 @@
 */
 
 :root {
-  --main-color: #ff0070;
+  --text-background-color: #ff0070;
 }
 
 :root {
@@ -19,8 +19,49 @@
   --text-color: #F1B2CE;
 }
 
+:root {
+ --section-title-color: #ff0070;
+}
 
 :root {
+  --header-text-color: #000028;
+}
+
+:root {
+  --shadow-color: #ff0070;
+}
+
+:root {
+  --card-title-color: #000028;
+}
+
+:root {
+  --header-decor-color: #ff0070;
+}
+
+:root {
+  --botton-and-coner-color: #ff0070;
+}
+
+:root {
+  --backgroud-img: url(../images/cover-image-dark.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*:root {
   --main-color-ligt: #FF8DCB;
 }
 
@@ -34,4 +75,4 @@
 
 :root {
   --text-color-light: #353430;
-}
+}*/
