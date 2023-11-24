@@ -18,6 +18,9 @@ button {
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: var(--backgroud-img);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   font-family: "IBM Plex Mono", sans-serif;
 }
@@ -178,18 +181,18 @@ button {
 
 .section-title {
   width: 315px;
-  margin-top: 0px;
 }
 
 .main__titles {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  margin-block-start: 0px;
+  line-height: 130%;
 }
 
 .title-decor {
   margin-block-end: 10px;
+  padding-inline-start: 1px;
 }
 
 .card__text {
@@ -197,6 +200,7 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  margin-block-start: 0px;
 }
 
 .card__text-link:hover {
@@ -251,12 +255,12 @@ button {
 .images > div:nth-child(3) {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
-  max-width: 315px;
+  max-width: 314px;
   max-height: 768px;
 }
 
 .images > div:nth-child(4) {
-  max-width: 315px;
+  max-width: 314px;
   max-height: 315px;
 }
 

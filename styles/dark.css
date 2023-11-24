@@ -27,12 +27,6 @@
   background-color: var(--background-color);
 }
 
-.header {
-  background-image: var(--backgroud-img);
-  background-position: center;
-  background-size: cover;
-}
-
 .header__theme-menu-button {
   color: var(--botton-and-coner-color);
 }
