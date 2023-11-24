@@ -140,6 +140,7 @@ button {
 
 .main {
   padding-inline: 20px;
+  margin-block-start: 5px;
 }
 
 .main__text-content {
