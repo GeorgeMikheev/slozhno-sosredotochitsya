@@ -18,6 +18,7 @@ button {
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-attachment: fixed;
   font-family: "IBM Plex Mono", sans-serif;
 }
 
