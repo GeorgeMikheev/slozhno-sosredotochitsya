@@ -125,8 +125,6 @@ button {
 .header__text-corner {
   width: 25px;
   height: 25px;
-  border-block-end: 1px solid var(--pink);
-  border-inline-start: 1px solid var(--pink);
   margin-inline-start: 20px;
   margin-block-end: 20px;
 }
@@ -443,7 +441,7 @@ button {
 
   .main__image-content {
     margin-block-start: 50px;
-    margin-block-end: 35px;
+    margin-block-end: 40px;
   }
 
   .main__image-content > h2:nth-child(1) {
@@ -473,7 +471,7 @@ button {
   
   .images > div:nth-child(4) {
     max-width: 355px;
-    max-height: 355px;
+    max-height: 350px;
   }
   
   .images > div:nth-child(5) {

@@ -62,7 +62,7 @@
   width: 9px;
   height: 9px;
   background-color: var(--header-decor-color);
-  box-shadow: 0 0 5px 3px var(--header-decor-color);
+  box-shadow: 0 0 5px 2px var(--header-decor-color);
   border-radius: 50%;
 }
 
