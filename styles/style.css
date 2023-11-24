@@ -179,12 +179,14 @@ button {
 
 .section-title {
   width: 315px;
+  margin-top: 0px;
 }
 
 .main__titles {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  margin-block-start: 0px;
 }
 
 .title-decor {
@@ -211,7 +213,6 @@ button {
 }
 
 .main__image-content {
-  height: 1091px;
   margin-block-start: 60px;
   margin-block-end: 60px;
 }
@@ -237,34 +238,35 @@ button {
 .images > div:nth-child(1) {
   grid-column: 1 /3;
   grid-row: 1 / 2;
-  width: 649px;
-  height: 260px;
+  max-width: 649px;
+  max-height: 260px;
 }
 
 .images > div:nth-child(2) {
   grid-row: 1 / 3;
   grid-column: 3 / 4;
-  width: 315px;
-  height: 595px;
+  max-width: 315px;
+  max-height: 595px;
 }
 
 .images > div:nth-child(3) {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
-  width: 315px;
-  height: 768px;
+  max-width: 315px;
+  max-height: 768px;
 }
 
 .images > div:nth-child(4) {
-  width: 315px;
-  height: 315px;
+  max-width: 315px;
+  max-height: 315px;
 }
 
 .images > div:nth-child(5) {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
-  width: 649px;
-  height: 428px;
+  max-width: 649px;
+  max-height: 428px;
+  margin-block-start: 5px;
 }
 
 .footer {
@@ -337,6 +339,32 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .images > div:nth-child(1) {
+    max-width: 479px;
+    max-height: 192px;
+  }
+  
+  .images > div:nth-child(2) {
+    max-width: 229px;
+    max-height: 441px;
+  }
+  
+  .images > div:nth-child(3) {
+    max-width: 229px;
+    max-height: 568px;
+  }
+  
+  .images > div:nth-child(4) {
+    max-width: 229px;
+    max-height: 229px;
+  }
+  
+  .images > div:nth-child(5) {
+    max-width: 479px;
+    max-height: 318px;
+    margin-block-start: 5px;
   }
 
 }
@@ -415,7 +443,7 @@ button {
 
   .main__image-content {
     margin-block-start: 50px;
-    margin-block-end: 25px;
+    margin-block-end: 35px;
   }
 
   .main__image-content > h2:nth-child(1) {
@@ -428,8 +456,30 @@ button {
     gap: 10px;
   }
 
-  .images__card {
+  .images > div:nth-child(1) {
+    max-width: 355px;
+    max-height: 142px;
+  }
+  
+  .images > div:nth-child(2) {
+    max-width: 355px;
     max-height: 355px;
+  }
+  
+  .images > div:nth-child(3) {
+    max-width: 355px;
+    max-height: 237px;
+  }
+  
+  .images > div:nth-child(4) {
+    max-width: 355px;
+    max-height: 355px;
+  }
+  
+  .images > div:nth-child(5) {
+    max-width: 355px;
+    max-height: 237px;
+    margin-block-start: 5px;
   }
 
   .image {
