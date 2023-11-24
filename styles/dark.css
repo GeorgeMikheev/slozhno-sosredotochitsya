@@ -19,6 +19,7 @@
   --card-title-color: #000028;
   --header-decor-color: #ff0070;
   --botton-and-coner-color: #ff0070;
+  --botton-outline-hover: rgba(255, 0, 112, 0.40);
   --backgroud-img: url(../images/cover-image-dark.png);
 }
 

@@ -18,7 +18,7 @@ button {
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: "IBM Plex Mono",sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
 .header {
@@ -35,8 +35,8 @@ button {
 .header__theme {
   display: grid;
   grid-template: 100% / 2fr 1fr;
-  padding-block: 20px;
-  margin-inline-start: 20px;
+  padding-block-start: 20px;
+  margin-inline-start: 0px;
 }
 
 .header__theme-menu-list {
@@ -45,12 +45,7 @@ button {
   list-style: none;
   justify-content: end;
   gap: 10px;
-  margin-inline-end: 50px;
-}
-
-.header__theme-menu-item {
-  padding: 0 13px;
-  padding-block-end: 2px;
+  margin-inline-end: 42px;
 }
 
 .header__theme-menu-button {
@@ -61,10 +56,25 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  padding-inline: 13px;
+  padding-block: 2px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--botton-and-coner-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--botton-and-coner-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--botton-and-coner-color);
 }
 
 .decor {
@@ -94,30 +104,30 @@ button {
 .header__title {
   display: flex;
   align-items: center;
+  padding-block-start: 45px;
 }
 
 .header__title-text {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
-  margin-inline-start: 0;
 }
 
 .header__text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-block-start: 50px;
-  padding-block-end: 20px;
-  padding-inline-start: 20px;
+  justify-content: end;
+  align-items: center;
+  padding-block-end: 7px;
 }
 
 .header__text-corner {
-  align-self: flex-end;
   width: 25px;
   height: 25px;
   border-block-end: 1px solid var(--pink);
   border-inline-start: 1px solid var(--pink);
+  margin-inline-start: 20px;
+  margin-block-end: 20px;
 }
 
 .header__text-paragraph {
@@ -187,6 +197,18 @@ button {
   line-height: 130%;
 }
 
+.card__text-link:hover {
+  border-block-end: 1px solid var(--text-color);
+}
+
+.card__text-link:focus {
+  outline: none;
+}
+
+.card__text-link:focus-visible {
+  border: 1px solid var(--text-color);
+}
+
 .main__image-content {
   margin-block-start: 60px;
   margin-block-end: 50px;
@@ -234,7 +256,7 @@ button {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -243,7 +265,29 @@ button {
   font-weight: 700;
 }
 
+.footer__decor-down {
+  align-self: flex-end;
+  width: 25px;
+  height: 25px;
+  border-block-end: 1px solid var(--botton-and-coner-color);
+  border-inline-start:  1px solid var(--botton-and-coner-color);
+  margin: 20px;
+}
+
+.footer__decor-up {
+  align-self: flex-start;
+  width: 25px;
+  height: 25px;
+  border-block-start: 1px solid var(--botton-and-coner-color);
+  border-inline-end:  1px solid var(--botton-and-coner-color);
+  margin: 20px;
+}
+
 @media (width <= 768px) {
+
+  .page {
+    padding: 0;
+  }
 
   .header__theme {
     display: flex;
@@ -256,22 +300,18 @@ button {
     display: flex;
     flex-direction: column;
     margin-inline-end: 0;
-    margin-block-end: 30px;
+    margin-block-end: 40px;
     gap: 13px;
-  }
-
-  .header__title-text {
-    margin-block-start: 20px;
   }
 
   .header__text {
     height: 280px;
-    margin-inline-start: 20px;
   }
 
   .header__text-paragraph {
     width: 364px;
     height: max-content;
+    margin-block-end: 15px;
   }
 
   .section-title {
@@ -286,11 +326,8 @@ button {
 
 }
 
-@media (width <= 375px) {
 
-  .page {
-    padding: 10px;
-  }
+@media (width <= 376px) {
 
   .header {
     height: 100vh;
@@ -299,51 +336,111 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    margin: 0;
   }
 
   .header__theme {
     align-self: flex-end;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    gap: 40px;
+  }
+
+  .header__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
   .header__title-text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin: 0;
-  }
-
-  .header__text-corner {
-    margin-left: 10px;
+    font-size: 116px;
+    width: 355px;
+    margin-inline-start: 0px;
+    padding: 0px;
+    align-self: center;
   }
 
   .header__text {
-    display: flex;
-    justify-content: start;
-    margin: 0;
+    align-self: center;
+    width: 355px;
+    height: min-content;
+    margin-block-start: 30px;
   }
 
   .header__text-paragraph {
-    align-self: flex-start;
-    width: 355px;
     margin: 0;
+    padding: 0;
+  }
+
+  .header__text-corner {
+    align-self: flex-start;
+    margin-inline-start: 10px;
+    margin-block-end: 10px;
   }
 
   .section-title {
     width: auto;
   }
 
+  .main {
+    padding-block: 0;
+    padding-inline: 10px;
+  }
+
   .main__text-content {
     display: flex;
     flex-direction: column;
+    margin-block-start: 40px;
+  }
+
+  .main__text-content-row {
+    margin-block: 50px;
+  }
+
+  .main__image-content {
+    margin-block-start: 50px;
+    margin-block-end: 25px;
+  }
+
+  .main__image-content > h2:nth-child(1) {
+    margin-block-end: 10px;
   }
 
   .images {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
+  .images__card {
+    max-height: 355px;
+  }
+
+  .image {
+    height: 100%;
+  }
+
+  .footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: 116px;
+  }
+  
+  .footer__decor-down {
+    align-self: flex-start;
+    margin: 10px;
+  }
+  
+  .footer__decor-up {
+    align-self: flex-end;
+    margin: 10px;
   }
   
 }

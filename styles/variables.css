@@ -44,35 +44,9 @@
 }
 
 :root {
+  --botton-outline-hover: rgba(50, 49, 45, 0.40);
+}
+
+:root {
   --backgroud-img: url(../images/cover-image-dark.png);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*:root {
-  --main-color-ligt: #FF8DCB;
-}
-
-:root {
-  --title-color-light: #ffc2e6;
-}
-
-:root {
-  --background-color-light: #FFF1F7;
-}
-
-:root {
-  --text-color-light: #353430;
-}*/
