@@ -1,5 +1,3 @@
-
-
 .page {
   background-image: var(--backgroud-img);
   background-position: center;
@@ -273,7 +271,6 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center;
   align-items: center;
   padding: 20px;
 }
