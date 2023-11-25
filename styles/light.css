@@ -25,9 +25,17 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color: #FF8DCB;
+    --text-background-color: #FF8DCB;
     --title-color: #ffc2e6;
     --background-color: #FFF1F7;
     --text-color: #353430;
+    --section-title-color: #353430;
+    --header-text-color: #353430;
+    --shadow-color: #ff0070;
+    --card-title-color: #353430;
+    --header-decor-color: #fff1f7;
+    --botton-and-coner-color: #353430;
+    --botton-outline-hover: rgba(50, 49, 45, 0.40);
+    --backgroud-img: url(../images/cover-image-light.png);
   }
 }
