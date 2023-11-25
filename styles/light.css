@@ -9,6 +9,7 @@
   --card-title-color: #353430;
   --header-decor-color: #fff1f7;
   --botton-and-coner-color: #353430;
+  --shadow-color-link: #ff8dcb;
   --botton-outline-hover: rgba(50, 49, 45, 0.40);
   --backgroud-img: url(../images/cover-image-light.png);
 }
@@ -25,6 +26,7 @@
     --card-title-color: #353430;
     --header-decor-color: #fff1f7;
     --botton-and-coner-color: #353430;
+    --shadow-color-link: #ff8dcb;
     --botton-outline-hover: rgba(50, 49, 45, 0.40);
     --backgroud-img: url(../images/cover-image-light.png);
   }

@@ -3,12 +3,13 @@
   --title-color: #DB00FF;
   --background-color: #000028;
   --text-color: #F1B2CE;
- --section-title-color: #ff0070;
+  --section-title-color: #ff0070;
   --header-text-color: #000028;
   --shadow-color: #ff0070;
   --card-title-color: #000028;
   --header-decor-color: #ff0070;
   --botton-and-coner-color: #ff0070;
-  --botton-outline-hover: rgba(50, 49, 45, 0.40);
+  --botton-outline-hover: rgba(255, 0, 112, 0.40);
+  --shadow-color-link: #ff0070;
   --backgroud-img: url(../images/cover-image-dark.png);
 }
