@@ -1,7 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +13,6 @@ button {
 }
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--backgroud-img);
   background-position: center;
   background-size: cover;
@@ -241,35 +236,21 @@ button {
 .images > div:nth-child(1) {
   grid-column: 1 /3;
   grid-row: 1 / 2;
-  /*max-width: 649px;
-  max-height: 260px;*/
 }
 
 .images > div:nth-child(2) {
   grid-row: 1 / 3;
   grid-column: 3 / 4;
-  /*max-width: 315px;
-  max-height: 595px;*/
 }
 
 .images > div:nth-child(3) {
   grid-row: 2 / 4;
   grid-column: 1 / 2;
-  /*max-width: 314px;
-  max-height: 768px;*/
 }
-
-/*.images > div:nth-child(4) {
-  max-width: 314px;
-  max-height: 315px;
-}*/
 
 .images > div:nth-child(5) {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
-  max-width: 649px;
- /* max-height: 428px;
-  margin-block-start: 5px;*/
 }
 
 .footer {
@@ -343,32 +324,6 @@ button {
     flex-direction: column;
     gap: 20px;
   }
-
-  /*.images > div:nth-child(1) {
-    max-width: 479px;
-    max-height: 192px;
-  }
-  
-  .images > div:nth-child(2) {
-    max-width: 229px;
-    max-height: 441px;
-  }
-  
-  .images > div:nth-child(3) {
-    max-width: 229px;
-    max-height: 568px;
-  }
-  
-  .images > div:nth-child(4) {
-    max-width: 229px;
-    max-height: 229px;
-  }
-  
-  .images > div:nth-child(5) {
-    max-width: 479px;
-    max-height: 318px;
-    margin-block-start: 5px;
-  }*/
 
 }
 
@@ -458,32 +413,6 @@ button {
     flex-direction: column;
     gap: 10px;
   }
-
-  /*.images > div:nth-child(1) {
-    max-width: 355px;
-    max-height: 142px;
-  }
-  
-  .images > div:nth-child(2) {
-    max-width: 355px;
-    max-height: 355px;
-  }
-  
-  .images > div:nth-child(3) {
-    max-width: 355px;
-    max-height: 237px;
-  }
-  
-  .images > div:nth-child(4) {
-    max-width: 355px;
-    max-height: 350px;
-  }
-  
-  .images > div:nth-child(5) {
-    max-width: 355px;
-    max-height: 237px;
-    margin-block-start: 5px;
-  }*/
 
   .image {
     height: 100%;
