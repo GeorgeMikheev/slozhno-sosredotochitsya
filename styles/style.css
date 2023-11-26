@@ -317,6 +317,10 @@
     gap: 13px;
   }
 
+  .header__title-text {
+    text-shadow: 4px 4px 0 var(--shadow-color-title);
+  }
+
   .header__text-paragraph {
     align-self: flex-start;
     width: 364px;
@@ -340,6 +344,10 @@
 
   .main__image-content {
     margin-block-end: 60px;
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--shadow-color-title);
   }
 
 }

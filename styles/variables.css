@@ -11,5 +11,6 @@
   --botton-and-coner-color: #ff0070;
   --botton-outline-hover: rgba(255, 0, 112, 0.40);
   --shadow-color-link: #ff0070;
+  --shadow-color-title: #ff0070;
   --backgroud-img: url(../images/cover-image-dark.png);
 }
